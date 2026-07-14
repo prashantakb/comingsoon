@@ -16,28 +16,25 @@ html,
 body{
     width:100%;
     height:100%;
-    overflow:hidden;
 }
 
 .container{
     width:100vw;
     height:100vh;
+    background:url('images/coming_soon.jpg') center center/cover no-repeat;
 }
 
-.container img{
-    width:100%;
-    height:100%;
-    object-fit:cover; /* Fill entire screen */
-    display:block;
+/* Mobile */
+@media (max-width:768px){
+    .container{
+        background-image:url('images/coming_soon_mobile.jpg');
+    }
 }
 </style>
-
 </head>
 <body>
 
-<div class="container">
-    <img src="images/coming_soon.jpg" alt="Coming Soon">
-</div>
+<div class="container"></div>
 
 </body>
 </html>
